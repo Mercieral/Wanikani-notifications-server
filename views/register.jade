@@ -1,0 +1,45 @@
+extends layout
+
+block head
+    link(rel='stylesheet', href='/stylesheets/register.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.3.1/css/all.css', crossorigin='anonymous')
+
+block content
+    .container
+        .card
+            .card-header(data-toggle='collapse', data-target='#stepOne', aria-expanded='false', aria-controls='stepOne')
+                h4 Step 1: Subscribe to "Pushed"
+
+            #stepOne.card-body.collapse
+                .card-padding-container
+                    p 1. Click the link below to create a "Pushed" account and subscribe to the application
+                    .download-step-details
+                        a(href='https://pushed.co/s/vAAm23a')
+                            img#pushed-link(src='https://account.pushed.co/assets/pushed/media/share/blue/subscribe_pushed_short.png', alt='Subscribe To Pushed', title='Subscribe To Pushed')
+
+                    p 2. Click the link below to download the "Pushed" mobile application on any desired devices
+                    .download-step-details
+                        a.btn.btn-lg.btn-dark.m-sm.hvr-grow(href='https://pushed.co/download/guess', data-jump='true')
+                            i.fas.fa-arrow-alt-circle-down.fa-fw
+                            |  Install Pushed
+
+                    p 3. Login to your pushed account in the downloaded app
+
+                    p 4. Verify that "Wanikani reviews notifications" appears in subscribed applications
+
+        .card
+            .card-header(data-toggle='collapse', data-target='#stepTwo', aria-expanded='false', aria-controls='stepTwo')
+                h4 Step 2: Link your Wanikani Account
+
+            #stepTwo.card-body.collapse
+                .card-padding-container
+                    p todo
+
+        .card
+            .card-header(data-toggle='collapse', data-target='#stepThree', aria-expanded='false', aria-controls='stepThree')
+                h4 Step 3: You're all set!
+
+            #stepThree.card-body.collapse
+                .card-padding-container
+                    p You can now log into your account and manage your notifications
+                    a(href='/dashboard') Go to the dashboard

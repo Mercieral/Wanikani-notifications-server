@@ -1,0 +1,29 @@
+.card-body {
+    padding: 0;
+}
+
+.card-header {
+    cursor: pointer;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.card-padding-container {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+}
+
+.card-padding-container p {
+    margin-top: 1rem;
+}
+
+#pushed-link {
+    height: 65px;
+    padding-left: -5px;
+}
+
+.download-step-details {
+    width: 100%;
+    text-align: center;
+}

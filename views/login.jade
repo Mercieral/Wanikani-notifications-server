@@ -1,0 +1,32 @@
+extends layout
+
+block head
+    link(rel='stylesheet', href='/stylesheets/login.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.3.1/css/all.css', crossorigin='anonymous')
+
+block content
+    .container
+        .d-flex.justify-content-center.h-100
+            .card
+                .card-header
+                    h3 Manage Notifications
+                .card-body
+                    form(action="/dashboard" method="get")
+                        .input-group.form-group
+                            .input-group-prepend
+                                span.input-group-text
+                                    i.fas.fa-user
+                            input.form-control(type='text', placeholder='username')
+                        .input-group.form-group
+                            .input-group-prepend
+                                span.input-group-text
+                                    i.fas.fa-key
+                            input.form-control(type='password', placeholder='password')
+                        .form-group
+                            input.btn.float-right.login_btn(type='submit', value='Login')
+                .card-footer
+                    .d-flex.justify-content-center.links
+                        | Don't have an account?
+                        a(href='register') Sign Up
+                    .d-flex.justify-content-center
+                        a(href='/forgot_password') Forgot your password?
